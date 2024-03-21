@@ -45,6 +45,7 @@ Stack.setPosition(1, 1, 1);
 Stack.getDimensions(width, height, channels, slices, frames);
 selectWindow(title);
 max_std=stdCalc(2,slices,1);
+
 if (max_std > 40) {
 Stack.getPosition(ch, slice, fr);
 run("Duplicate...", "title=stdSlice");
@@ -105,6 +106,7 @@ setAutoThreshold("Huang dark no-reset");
 setOption("BlackBackground", true);
 run("Convert to Mask");
 run("Watershed");
+
 run("Analyze Particles...", "size=60-Infinity circularity=0.30-1.00 exclude add");
 selectWindow(title);
 Stack.setPosition(ch, slice, fr);
