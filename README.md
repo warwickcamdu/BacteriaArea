@@ -14,7 +14,7 @@ Approximates area of bateria per cell by measuring area of bacteria (channel 2) 
 - Install [simple-omero-clients](https://github.com/GReD-Clermont/simple-omero-client)
 - Install [omero_macro-extensions](https://github.com/GReD-Clermont/omero_macro-extensions)
 
-Instructions of installing all Plugins are available here: [https://omero-guides.readthedocs.io/projects/fiji/en/latest/installation.html](https://omero-guides.readthedocs.io/projects/fiji/en/latest/installation.html)
+Instructions for installing all Plugins are available here: [https://omero-guides.readthedocs.io/projects/fiji/en/latest/installation.html](https://omero-guides.readthedocs.io/projects/fiji/en/latest/installation.html)
 
 ## Output
 Saves ROIs for nuclei and bacteria to OMERO images and saves Bacteria Area per Cell.csv to OMERO dataset. Bacteria Area per Cell.csv contains two columns: 1) the image ids and 2) the bacterial area per cell for each image.
